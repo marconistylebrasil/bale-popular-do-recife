@@ -41,3 +41,36 @@
 #espetaculos .cards .show-photo,#espetaculos .cards .media-placeholder{width:100%;min-height:290px}
 #espetaculos .cards .repertoire-pending{background:linear-gradient(135deg,#24211d,#171614)}
 #espetaculos .cards .repertoire-pending span{max-width:150px;text-align:center;line-height:1.5}
+
+/* Editorial expansion — complete institutional experience */
+.team{padding:8vw 5vw;background:#0d0d0d;border-top:1px solid var(--line)}
+.team .section-head h2{color:#fff}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.team-grid article{padding:42px 34px;min-height:260px;border-right:1px solid var(--line)}
+.team-grid article:last-child{border-right:0}
+.team-grid span{font-size:9px;letter-spacing:.18em;color:var(--gold)}
+.team-grid h3{font-family:"Playfair Display",serif;font-weight:500;font-size:32px;margin:18px 0}
+.team-grid p{color:#999;font-size:13px;line-height:1.7;max-width:360px}
+.manifesto{padding:10vw 8vw;background:#c69a42;color:#111}
+.manifesto .eyebrow{color:#4c3917}
+.manifesto blockquote{font-family:"Playfair Display",serif;font-size:clamp(48px,7vw,105px);line-height:.95;letter-spacing:-.035em;max-width:1200px;margin:.45em 0}
+.manifesto>p:last-child{font-size:16px;line-height:1.7;max-width:630px;margin-left:auto}
+.agenda-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #d9d0c2;border-bottom:1px solid #d9d0c2}
+.agenda-grid article{padding:36px 30px 36px 0}
+.agenda-grid article+article{padding-left:30px;border-left:1px solid #d9d0c2}
+.agenda-grid span{font-size:9px;letter-spacing:.16em;color:#9a7a3d}
+.agenda-grid h3{font-family:"Playfair Display",serif;font-size:28px;font-weight:500;margin:12px 0}
+.agenda-grid p{color:#777;line-height:1.65;max-width:500px}
+.press{display:grid;grid-template-columns:1.2fr .8fr;gap:8vw;align-items:end}
+.press>div>p:not(.eyebrow){max-width:580px;color:#999;line-height:1.7}
+.press-links{border-top:1px solid var(--line)}
+.press-links a{display:flex;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--line);font-size:10px;letter-spacing:.12em}
+.press-links a b{color:var(--gold)}
+.booking{display:grid;grid-template-columns:1.25fr .75fr;gap:8vw;align-items:end}
+.booking-side p{line-height:1.7;color:#655e53;max-width:420px}
+.booking-mail{display:block;margin-top:22px;font-size:11px;border-bottom:1px solid #bdb19e;padding-bottom:8px;width:max-content}
+#espetaculos .cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+#espetaculos .cards article:nth-child(4),#espetaculos .cards article:nth-child(5){min-height:420px}
+#espetaculos .cards .show-photo,#espetaculos .cards .media-placeholder{aspect-ratio:4/3;min-height:0}
+@media(max-width:900px){.team-grid{grid-template-columns:1fr}.team-grid article{border-right:0;border-bottom:1px solid var(--line)}.press,.booking{grid-template-columns:1fr}.agenda-grid{grid-template-columns:1fr}#espetaculos .cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.team,.manifesto{padding:72px 6vw}.agenda-grid{grid-template-columns:1fr}.agenda-grid article+article{padding-left:0;border-left:0;border-top:1px solid #d9d0c2}#espetaculos .cards{grid-template-columns:1fr}}
