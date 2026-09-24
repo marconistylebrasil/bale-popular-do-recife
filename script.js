@@ -1,0 +1,1 @@
+const header=document.querySelector('.site-header');const toggle=document.querySelector('.menu-toggle');toggle?.addEventListener('click',()=>header.classList.toggle('open'));document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>header.classList.remove('open')));document.getElementById('year').textContent=new Date().getFullYear();
