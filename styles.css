@@ -17,3 +17,5 @@
 .founder-visual p{font-family:"Playfair Display",serif;font-size:26px;max-width:330px;color:#d8c7a4}
 @media(max-width:900px){.founder{grid-template-columns:1fr}.founder-visual{min-height:420px}.history-photo{min-height:440px}}
 @media(max-width:560px){.founder-copy{padding:72px 6vw}.founder h2{font-size:56px}.founder-visual{padding:70px 6vw}}
+
+.show-photo{min-height:290px;position:relative;background-color:#171717;background-size:cover;background-position:center;overflow:hidden}.show-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.52),transparent 55%)}.show-photo span{position:absolute;z-index:2;left:14px;bottom:13px;font-size:8px;letter-spacing:.16em;color:#eee}
