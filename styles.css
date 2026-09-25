@@ -169,3 +169,23 @@
 .music-mark small{margin-top:30px;font-size:9px;letter-spacing:.24em;color:#b7a98c}
 @media(max-width:900px){.music-feature{grid-template-columns:1fr}.music-mark{min-height:330px;border-left:0;border-top:1px solid var(--line)}}
 @media(max-width:560px){.music-copy{padding:72px 6vw}.music-actions{flex-direction:column;align-items:flex-start}.music-mark{min-height:280px}}
+
+
+/* Repertório — página interna */
+.repertoire-intro{padding:8vw;background:var(--cream)}
+.repertoire-intro h2{font-family:"Playfair Display",serif;font-size:clamp(42px,5.5vw,78px);font-weight:500;line-height:1;max-width:900px;margin:.25em 0}
+.repertoire-intro>p:not(.eyebrow){max-width:760px;color:#6f6a62;line-height:1.8}
+.catalog-feature{position:relative;overflow:hidden;color:#fff;background-size:cover!important;background-position:center!important;display:flex;flex-direction:column;justify-content:flex-end}
+.catalog-feature:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.82),rgba(0,0,0,.08) 75%)}
+.catalog-feature>*{position:relative;z-index:1}
+.catalog-feature p{color:#ddd}
+.catalog-andancas{background:url('https://drive.google.com/thumbnail?id=1bEd2v01yGIKqD_k8FNwv_qicRRjRR_FU&sz=w1400')}
+.catalog-despertar{background:url('https://drive.google.com/thumbnail?id=1TpykVaqfxFWizFch5SuCDhpiE-AHxDBn&sz=w1400')}
+.catalog-brincadeiras{background:url('https://drive.google.com/thumbnail?id=1Nfl5YkDOraCzraLG17VGfcXFlZWrxK73&sz=w1400')}
+.development-work{display:grid;grid-template-columns:1.2fr .8fr;min-height:480px;background:#0c0c0c;color:#fff;border-top:1px solid var(--line)}
+.development-work>div:first-child{padding:8vw;align-self:center}
+.development-work h2{font-family:"Playfair Display",serif;font-size:clamp(48px,6vw,86px);font-weight:500;line-height:.95;margin:.25em 0}
+.development-work p:not(.eyebrow){max-width:700px;color:#aaa;line-height:1.8}
+.development-mark{display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-size:clamp(150px,20vw,280px);color:var(--gold);border-left:1px solid var(--line);background:radial-gradient(circle,rgba(198,154,66,.12),transparent 58%)}
+@media(max-width:900px){.development-work{grid-template-columns:1fr}.development-mark{min-height:300px;border-left:0;border-top:1px solid var(--line)}}
+@media(max-width:560px){.repertoire-intro{padding:72px 6vw}.development-work>div:first-child{padding:72px 6vw}.development-mark{min-height:240px}.catalog-feature{min-height:480px}}
