@@ -218,3 +218,23 @@
 .video-archive-mark small{margin-top:28px;font-size:9px;letter-spacing:.22em;color:#b7a98c}
 @media(max-width:900px){.video-archive{grid-template-columns:1fr}.video-archive-mark{min-height:300px;border-left:0;border-top:1px solid var(--line)}}
 @media(max-width:560px){.video-archive>div:first-child{padding:72px 6vw}.video-archive-mark{min-height:240px}}
+
+/* Acervo — exposição documental */
+.archive-exhibition{padding:8vw;background:#e8e1d6;color:var(--ink)}
+.archive-exhibition-head{display:grid;grid-template-columns:.7fr 1.3fr;column-gap:7vw;align-items:end;margin-bottom:55px}
+.archive-exhibition-head .eyebrow{grid-column:1/-1}
+.archive-exhibition-head h2{font-family:"Playfair Display",serif;font-size:clamp(46px,6vw,88px);font-weight:500;line-height:.94;margin:.25em 0}
+.archive-exhibition-head>p:not(.eyebrow){color:#686157;line-height:1.8;max-width:720px}
+.archive-exhibit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #cfc4b4;border-left:1px solid #cfc4b4}
+.archive-exhibit-grid article{padding:34px;border-right:1px solid #cfc4b4;border-bottom:1px solid #cfc4b4;min-height:310px;display:flex;flex-direction:column}
+.archive-exhibit-grid .archive-exhibit-feature{grid-row:span 2;min-height:620px;padding:0}
+.archive-exhibit-photo{min-height:410px;background-size:cover;background-position:center}
+.archive-exhibit-25{background-image:linear-gradient(0deg,rgba(0,0,0,.08),transparent),url('https://drive.google.com/thumbnail?id=1otGqnuL9HrPku_4XGd2DMRejUMkZUAYA&sz=w1600')}
+.archive-exhibit-feature>span,.archive-exhibit-feature>h3,.archive-exhibit-feature>p{margin-left:34px;margin-right:34px}
+.archive-exhibit-feature>span{margin-top:28px}
+.archive-exhibit-grid span{font-size:9px;letter-spacing:.16em;color:#8d6d31;text-transform:uppercase}
+.archive-exhibit-grid h3{font-family:"Playfair Display",serif;font-size:27px;font-weight:500;line-height:1.08;margin:16px 0}
+.archive-exhibit-grid p{color:#6e675e;font-size:13px;line-height:1.75;margin:0}
+.archive-exhibit-grid small{display:block;margin-top:auto;padding-top:25px;color:#958a7a;font-size:9px;line-height:1.5;letter-spacing:.05em}
+@media(max-width:980px){.archive-exhibition-head{grid-template-columns:1fr}.archive-exhibit-grid{grid-template-columns:repeat(2,1fr)}.archive-exhibit-grid .archive-exhibit-feature{grid-row:auto;grid-column:1/-1}}
+@media(max-width:560px){.archive-exhibition{padding:72px 6vw}.archive-exhibit-grid{grid-template-columns:1fr}.archive-exhibit-grid .archive-exhibit-feature{grid-column:auto}.archive-exhibit-grid article{min-height:280px;padding:28px}.archive-exhibit-grid .archive-exhibit-feature{padding:0}.archive-exhibit-photo{min-height:390px}}
