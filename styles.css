@@ -205,3 +205,16 @@
 .archive-context{padding:8vw;background:#f2ede4}
 @media(max-width:900px){.archive-statement{grid-template-columns:1fr;gap:25px}.archive-gallery{grid-template-columns:1fr 1fr;min-height:auto}.archive-memory{min-height:480px}.archive-memory:first-child{grid-column:1/-1;min-height:620px}}
 @media(max-width:560px){.archive-statement,.archive-context{padding:72px 6vw}.archive-gallery{grid-template-columns:1fr}.archive-memory,.archive-memory:first-child{grid-column:auto;min-height:430px}}
+
+
+/* Acervo audiovisual */
+.archive-channel-link{display:inline-block;margin-top:16px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#80632f}
+.video-archive{display:grid;grid-template-columns:1.2fr .8fr;min-height:500px;background:#0c0c0c;color:#fff}
+.video-archive>div:first-child{padding:8vw;align-self:center}
+.video-archive h2{font-family:"Playfair Display",serif;font-size:clamp(46px,5.8vw,82px);font-weight:500;line-height:.98;margin:.25em 0}
+.video-archive p:not(.eyebrow){max-width:720px;color:#aaa;line-height:1.8;margin-bottom:30px}
+.video-archive-mark{display:flex;flex-direction:column;align-items:center;justify-content:center;border-left:1px solid var(--line);background:radial-gradient(circle,rgba(198,154,66,.12),transparent 58%)}
+.video-archive-mark span{font-size:clamp(100px,14vw,190px);color:var(--gold);line-height:1}
+.video-archive-mark small{margin-top:28px;font-size:9px;letter-spacing:.22em;color:#b7a98c}
+@media(max-width:900px){.video-archive{grid-template-columns:1fr}.video-archive-mark{min-height:300px;border-left:0;border-top:1px solid var(--line)}}
+@media(max-width:560px){.video-archive>div:first-child{padding:72px 6vw}.video-archive-mark{min-height:240px}}
