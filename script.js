@@ -90,7 +90,8 @@ function aplicarEspetaculos(itens=[]){
   grid.innerHTML=itens.map(item=>{
     const img=imagemDrive(item);
     const style=img?` style="background-image:url('${esc(img)}')"`:'';
-    return `<article><div class="show-photo"${style}><span>${esc(texto(item,'credito','credito_foto','legenda')||'ACERVO BPR')}</span></div><h3>${esc(texto(item,'titulo','nome','espetaculo'))}</h3><p class="show-meta">${esc(texto(item,'subtitulo','descricao_curta','ano','descricao'))}</p></article>`;
+    const meta=[texto(item,'marco','subtitulo','descricao_curta'),texto(item,'ano')].filter(Boolean).join(' · ')||texto(item,'descricao');
+    return `<article><div class="show-photo"${style}><span>${esc(texto(item,'credito','crédito','credito_foto','legenda')||'ACERVO BPR')}</span></div><h3>${esc(texto(item,'titulo','nome','espetaculo'))}</h3><p class="show-meta">${esc(meta)}</p></article>`;
   }).join('');
 }
 function aplicarAcervo(itens=[]){
