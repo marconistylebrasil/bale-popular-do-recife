@@ -20,7 +20,7 @@ function esc(valor){
 function imagemDrive(item,tamanho=1200){
   const url=texto(item,'imagem_url','url_imagem','foto_url','url');
   if(url) return url;
-  const id=texto(item,'imagem_id','id_imagem','foto_id','drive_id','arquivo_id');
+  const id=texto(item,'imagem_drive_id','imagem_id','id_imagem','foto_id','drive_id','arquivo_id');
   return id?`https://drive.google.com/thumbnail?id=${encodeURIComponent(id)}&sz=w${tamanho}`:'';
 }
 function aplicarConfig(config={}){
