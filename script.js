@@ -1,7 +1,7 @@
 const header=document.querySelector('.site-header');
 const toggle=document.querySelector('.menu-toggle');
-toggle?.addEventListener('click',()=>header.classList.toggle('open'));
-document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>header.classList.remove('open')));
+toggle?.addEventListener('click',()=>{const aberto=header.classList.toggle('open');toggle.setAttribute('aria-expanded',String(aberto));toggle.setAttribute('aria-label',aberto?'Fechar menu':'Abrir menu');toggle.textContent=aberto?'×':'☰';});
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>{header.classList.remove('open');toggle?.setAttribute('aria-expanded','false');toggle?.setAttribute('aria-label','Abrir menu');if(toggle)toggle.textContent='☰';}));
 document.getElementById('year')&&(document.getElementById('year').textContent=new Date().getFullYear());
 const onScroll=()=>header?.classList.toggle('scrolled',window.scrollY>30);
 onScroll();window.addEventListener('scroll',onScroll,{passive:true});
