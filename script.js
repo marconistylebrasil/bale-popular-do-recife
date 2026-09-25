@@ -72,10 +72,16 @@ function aplicarAgenda(itens=[]){
   if(!itens.length) return;
   const grid=document.querySelector('.agenda-grid');
   if(!grid) return;
-  grid.innerHTML=itens.map(item=>{
-    const quando=[texto(item,'data','periodo','ano'),texto(item,'local','cidade')].filter(Boolean).join(' · ');
-    return `<article><span>${esc(quando)}</span><h3>${esc(texto(item,'titulo','evento','nome'))}</h3><p>${esc(texto(item,'descricao','texto','conteudo'))}</p></article>`;
-  }).join('');
+  const primeiro=grid.querySelector('article');
+  const item=itens[0];
+  if(!primeiro||!item) return;
+  const data=primeiro.querySelector('span');
+  const titulo=primeiro.querySelector('h3');
+  const local=primeiro.querySelector('p');
+  if(data) data.textContent=texto(item,'data','periodo','ano')||data.textContent;
+  if(titulo) titulo.textContent=texto(item,'titulo','evento','nome')||titulo.textContent;
+  const lugar=[texto(item,'local'),texto(item,'cidade')].filter(Boolean).join(' · ');
+  if(local&&lugar) local.textContent=lugar;
 }
 function aplicarEspetaculos(itens=[]){
   if(!itens.length) return;
