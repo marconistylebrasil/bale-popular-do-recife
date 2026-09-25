@@ -11,7 +11,7 @@
 .founder-copy>p:not(.eyebrow):not(.founder-years){max-width:680px;color:#aaa;line-height:1.8}
 .founder-copy .founder-lead{font-family:"Playfair Display",serif;font-size:24px!important;line-height:1.5!important;color:#e8e0d4!important}
 .founder-copy .text-link{display:inline-block;margin-top:25px}
-.founder-visual{position:relative;overflow:hidden;padding:7vw 5vw;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(0deg,rgba(0,0,0,.62),rgba(0,0,0,.08) 60%),url('https://drive.google.com/thumbnail?id=1OdpJFnFHjixvBrR7TKwl8JAtgomMLixg&sz=w1600') center/cover no-repeat}
+.founder-visual{position:relative;overflow:hidden;padding:7vw 5vw;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(0deg,rgba(0,0,0,.62),rgba(0,0,0,.08) 60%),url('https://drive.google.com/thumbnail?id=1hVygX3WK-0dewqOJ7SfEQHoTSryjEriS&sz=w1600') center/cover no-repeat}
 .founder-visual:before{content:"ANDRÉ MADUREIRA";position:absolute;right:-20px;top:80px;writing-mode:vertical-rl;font-size:10px;letter-spacing:.42em;color:#77694e}
 .founder-number{font-family:"Playfair Display",serif;font-size:clamp(120px,17vw,260px);line-height:.7;color:transparent;-webkit-text-stroke:1px rgba(198,154,66,.55)}
 .founder-visual p{font-family:"Playfair Display",serif;font-size:26px;max-width:330px;color:#d8c7a4}
