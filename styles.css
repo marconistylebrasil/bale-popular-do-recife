@@ -119,7 +119,7 @@
 .method-photo{min-height:620px;background:linear-gradient(0deg,rgba(0,0,0,.22),rgba(0,0,0,.08)),url('https://drive.google.com/thumbnail?id=1SVhL2jxQjjTzuGeSJGpnPPmcKdXEeKsf&sz=w1600') center/cover no-repeat;position:relative}
 .method-photo span,.archive-photo span,.circulation-photo span{position:absolute;left:24px;bottom:22px;font-size:9px;letter-spacing:.15em;color:#fff;background:rgba(0,0,0,.52);padding:8px 10px}
 .show-andancas{background-image:linear-gradient(0deg,rgba(0,0,0,.18),rgba(0,0,0,.05)),url('https://drive.google.com/thumbnail?id=16AfIlJhuGpMKduCoCHQZoe4_9-aU-MUf&sz=w1200')}
-.show-despertar{background-image:linear-gradient(135deg,rgba(27,9,2,.35),rgba(0,0,0,.08)),url('https://drive.google.com/thumbnail?id=1Eky-YxtMSq5gJ4aW0-GSl6qcSk1qjEAz&sz=w1200')}
+.show-despertar{background-image:linear-gradient(135deg,#3a1d10,#111)}
 .show-criacao{background-image:linear-gradient(135deg,rgba(0,0,0,.15),rgba(0,0,0,.04)),url('https://drive.google.com/thumbnail?id=1BuAsSO1MVS5gHfvUmCkKbslazq4TxPuw&sz=w1200')}
 .archive{grid-template-columns:.8fr 1.2fr}
 .archive-visual{display:grid;grid-template-columns:1fr 1fr;min-height:580px}
