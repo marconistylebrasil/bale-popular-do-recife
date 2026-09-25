@@ -141,7 +141,7 @@
 .archive-photo-a{background-image:url('https://drive.google.com/thumbnail?id=1otGqnuL9HrPku_4XGd2DMRejUMkZUAYA&sz=w1600')}
 .archive-photo-b{background-image:url('https://drive.google.com/thumbnail?id=1v2elfGo6U1Lvkh3_BZ1ba40aKGi4-zf6&sz=w1200')}
 .circulation{display:grid;grid-template-columns:1.1fr .9fr;background:#111;color:#fff}
-.circulation-photo{min-height:720px;position:relative;background:linear-gradient(0deg,rgba(0,0,0,.12),rgba(0,0,0,.03)),url('https://drive.google.com/thumbnail?id=1JSfPWALXEJ6R-cAnqPc5bwPo75CTVVBj&sz=w1600') center/cover no-repeat}
+.circulation-photo{min-height:720px;position:relative;background:linear-gradient(0deg,rgba(0,0,0,.12),rgba(0,0,0,.03)),url('https://drive.google.com/thumbnail?id=1m8HEKr5N7dVv0mBXd_IKR8WpPQMtbfnX&sz=w1600') center/cover no-repeat}
 .circulation-copy{padding:8vw 7vw;align-self:center}
 .circulation-copy h2{font-family:"Playfair Display",serif;font-size:clamp(46px,5.2vw,80px);font-weight:500;line-height:.98;margin:.25em 0}
 .circulation-copy>p{color:#aaa;line-height:1.8}
