@@ -149,7 +149,7 @@
 .circulation-facts b{font-family:"Playfair Display",serif;color:var(--gold);font-size:24px}
 .circulation-facts span{color:#bbb;align-self:center}
 .light-link{color:#fff!important}
-.team-grid{grid-template-columns:repeat(5,1fr)}
-@media(max-width:1100px){.team-grid{grid-template-columns:repeat(3,1fr)}}
+.team-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:1100px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:900px){.circulation{grid-template-columns:1fr}.circulation-photo{min-height:560px}.archive{grid-template-columns:1fr}.archive-visual{min-height:480px}}
 @media(max-width:620px){.team-grid{grid-template-columns:1fr}.archive-visual{grid-template-columns:1fr}.archive-photo{min-height:360px}.method-photo{min-height:480px}.circulation-photo{min-height:480px}}
