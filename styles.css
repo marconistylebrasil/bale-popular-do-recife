@@ -45,11 +45,14 @@
 /* Editorial expansion — complete institutional experience */
 .team{padding:8vw 5vw;background:#0d0d0d;border-top:1px solid var(--line)}
 .team .section-head h2{color:#fff}
-.team-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.team-grid article{padding:42px 34px;min-height:260px;border-right:1px solid var(--line)}
-.team-grid article:last-child{border-right:0}
+.team-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.team-card{background:#0d0d0d;min-width:0;overflow:hidden}
+.team-photo{aspect-ratio:4/5;overflow:hidden;background:#171717}
+.team-photo img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 25%;filter:saturate(.92) contrast(1.03);transition:transform .6s ease,filter .6s ease}
+.team-card:hover .team-photo img{transform:scale(1.025);filter:saturate(1) contrast(1.04)}
+.team-copy{padding:28px 24px 32px}
 .team-grid span{font-size:9px;letter-spacing:.18em;color:var(--gold)}
-.team-grid h3{font-family:"Playfair Display",serif;font-weight:500;font-size:32px;margin:18px 0}
+.team-grid h3{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(24px,2.1vw,32px);margin:14px 0}
 .team-grid p{color:#999;font-size:13px;line-height:1.7;max-width:360px}
 .manifesto{padding:10vw 8vw;background:#c69a42;color:#111}
 .manifesto .eyebrow{color:#4c3917}
@@ -72,8 +75,8 @@
 #espetaculos .cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 #espetaculos .cards article:nth-child(4),#espetaculos .cards article:nth-child(5){min-height:420px}
 #espetaculos .cards .show-photo,#espetaculos .cards .media-placeholder{aspect-ratio:4/3;min-height:0}
-@media(max-width:900px){.team-grid{grid-template-columns:1fr}.team-grid article{border-right:0;border-bottom:1px solid var(--line)}.press,.booking{grid-template-columns:1fr}.agenda-grid{grid-template-columns:1fr}#espetaculos .cards{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.team,.manifesto{padding:72px 6vw}.agenda-grid{grid-template-columns:1fr}.agenda-grid article+article{padding-left:0;border-left:0;border-top:1px solid #d9d0c2}#espetaculos .cards{grid-template-columns:1fr}}
+@media(max-width:900px){.team-grid{grid-template-columns:repeat(2,1fr)}.press,.booking{grid-template-columns:1fr}.agenda-grid{grid-template-columns:1fr}#espetaculos .cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.team,.manifesto{padding:72px 6vw}.team-grid{grid-template-columns:1fr}.agenda-grid{grid-template-columns:1fr}.agenda-grid article+article{padding-left:0;border-left:0;border-top:1px solid #d9d0c2}#espetaculos .cards{grid-template-columns:1fr}}
 
 /* Internal pages */
 .inner-page{background:var(--paper);color:var(--ink)}
