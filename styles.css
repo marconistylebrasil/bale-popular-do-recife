@@ -189,3 +189,19 @@
 .development-mark{display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-size:clamp(150px,20vw,280px);color:var(--gold);border-left:1px solid var(--line);background:radial-gradient(circle,rgba(198,154,66,.12),transparent 58%)}
 @media(max-width:900px){.development-work{grid-template-columns:1fr}.development-mark{min-height:300px;border-left:0;border-top:1px solid var(--line)}}
 @media(max-width:560px){.repertoire-intro{padding:72px 6vw}.development-work>div:first-child{padding:72px 6vw}.development-mark{min-height:240px}.catalog-feature{min-height:480px}}
+
+
+/* Acervo — memória viva */
+.archive-statement{display:grid;grid-template-columns:1fr 1fr;gap:8vw;padding:8vw;background:var(--cream);align-items:end}
+.archive-statement h2,.archive-context h2{font-family:"Playfair Display",serif;font-size:clamp(42px,5.5vw,78px);font-weight:500;line-height:1;margin:.25em 0}
+.archive-statement>p,.archive-context>p:not(.eyebrow){color:#6f6a62;line-height:1.85;max-width:720px}
+.archive-gallery{display:grid;grid-template-columns:1.15fr .85fr .85fr;min-height:680px;background:#0c0c0c;gap:1px}
+.archive-memory{margin:0;position:relative;background-size:cover;background-position:center;min-height:100%}
+.archive-memory:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.62),transparent 48%)}
+.archive-memory figcaption{position:absolute;left:24px;bottom:22px;z-index:1;color:#fff;font-size:9px;letter-spacing:.17em}
+.archive-memory-a{background-image:url('https://drive.google.com/thumbnail?id=1otGqnuL9HrPku_4XGd2DMRejUMkZUAYA&sz=w1600')}
+.archive-memory-b{background-image:url('https://drive.google.com/thumbnail?id=1v2elfGo6U1Lvkh3_BZ1ba40aKGi4-zf6&sz=w1400')}
+.archive-memory-c{background-image:url('https://drive.google.com/thumbnail?id=1GX0nfu4_TWWkOPNxsX-IuaqNaTJo_pm7&sz=w1400')}
+.archive-context{padding:8vw;background:#f2ede4}
+@media(max-width:900px){.archive-statement{grid-template-columns:1fr;gap:25px}.archive-gallery{grid-template-columns:1fr 1fr;min-height:auto}.archive-memory{min-height:480px}.archive-memory:first-child{grid-column:1/-1;min-height:620px}}
+@media(max-width:560px){.archive-statement,.archive-context{padding:72px 6vw}.archive-gallery{grid-template-columns:1fr}.archive-memory,.archive-memory:first-child{grid-column:auto;min-height:430px}}
