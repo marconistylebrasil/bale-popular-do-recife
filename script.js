@@ -56,7 +56,17 @@ function aplicarEquipe(itens=[]){
   if(!itens.length) return;
   const grid=document.querySelector('.team-grid');
   if(!grid) return;
-  grid.innerHTML=itens.map(item=>`<article><span>${esc(texto(item,'funcao','cargo','papel'))}</span><h3>${esc(texto(item,'nome'))}</h3><p>${esc(texto(item,'descricao','texto','bio'))}</p></article>`).join('');
+  const cards=[...grid.querySelectorAll('.team-card')];
+  itens.forEach((item,i)=>{
+    const card=cards[i];
+    if(!card) return;
+    const nome=card.querySelector('h3');
+    const funcao=card.querySelector('span');
+    const descricao=card.querySelector('p');
+    if(nome) nome.textContent=texto(item,'nome')||nome.textContent;
+    if(funcao) funcao.textContent=texto(item,'funcao','cargo','papel')||funcao.textContent;
+    if(descricao) descricao.textContent=texto(item,'descricao','texto','bio')||descricao.textContent;
+  });
 }
 function aplicarAgenda(itens=[]){
   if(!itens.length) return;
