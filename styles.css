@@ -156,3 +156,16 @@
 
 @media(max-width:900px){.site-header.open{height:68px}.site-header.open nav{max-height:calc(100vh - 68px);overflow-y:auto}.site-header.open .menu-toggle{color:var(--gold)}}
 @media(max-width:560px){.site-header.open nav{padding:24px 6vw 32px}.site-header.open nav a{font-size:12px;padding:9px 0}.hero{min-height:620px}.hero-copy>p:not(.eyebrow){font-size:15px}.founder-honor h3{font-size:42px}.booking-mail{max-width:100%;overflow-wrap:anywhere}}
+
+/* Música do Balé */
+.music-feature{display:grid;grid-template-columns:1.2fr .8fr;min-height:520px;background:linear-gradient(135deg,#0b0b0b,#21170d);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.music-copy{padding:8vw 7vw;align-self:center}
+.music-copy h2{font-family:"Playfair Display",serif;font-size:clamp(52px,6vw,92px);font-weight:500;line-height:.95;letter-spacing:-.03em;margin:.25em 0}
+.music-copy>p:not(.eyebrow){max-width:680px;color:#aaa;line-height:1.8}
+.music-copy em{color:var(--gold)}
+.music-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.music-mark{display:flex;flex-direction:column;align-items:center;justify-content:center;border-left:1px solid var(--line);background:radial-gradient(circle,rgba(198,154,66,.13),transparent 55%)}
+.music-mark span{font-family:"Playfair Display",serif;font-size:clamp(150px,20vw,300px);line-height:.8;color:var(--gold)}
+.music-mark small{margin-top:30px;font-size:9px;letter-spacing:.24em;color:#b7a98c}
+@media(max-width:900px){.music-feature{grid-template-columns:1fr}.music-mark{min-height:330px;border-left:0;border-top:1px solid var(--line)}}
+@media(max-width:560px){.music-copy{padding:72px 6vw}.music-actions{flex-direction:column;align-items:flex-start}.music-mark{min-height:280px}}
