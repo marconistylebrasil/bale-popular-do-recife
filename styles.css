@@ -11,7 +11,7 @@
 .founder-copy>p:not(.eyebrow):not(.founder-years){max-width:680px;color:#aaa;line-height:1.8}
 .founder-copy .founder-lead{font-family:"Playfair Display",serif;font-size:24px!important;line-height:1.5!important;color:#e8e0d4!important}
 .founder-copy .text-link{display:inline-block;margin-top:25px}
-.founder-visual{position:relative;overflow:hidden;padding:7vw 5vw;display:flex;flex-direction:column;justify-content:flex-end;background:radial-gradient(circle at 50% 42%,rgba(198,154,66,.25),transparent 34%),linear-gradient(145deg,#211508,#090909)}
+.founder-visual{position:relative;overflow:hidden;padding:7vw 5vw;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(0deg,rgba(0,0,0,.62),rgba(0,0,0,.08) 60%),url('https://drive.google.com/thumbnail?id=1OdpJFnFHjixvBrR7TKwl8JAtgomMLixg&sz=w1600') center/cover no-repeat}
 .founder-visual:before{content:"ANDRÉ MADUREIRA";position:absolute;right:-20px;top:80px;writing-mode:vertical-rl;font-size:10px;letter-spacing:.42em;color:#77694e}
 .founder-number{font-family:"Playfair Display",serif;font-size:clamp(120px,17vw,260px);line-height:.7;color:transparent;-webkit-text-stroke:1px rgba(198,154,66,.55)}
 .founder-visual p{font-family:"Playfair Display",serif;font-size:26px;max-width:330px;color:#d8c7a4}
@@ -118,9 +118,9 @@
 /* Home completion — archive-led visual narrative */
 .method-photo{min-height:620px;background:linear-gradient(0deg,rgba(0,0,0,.22),rgba(0,0,0,.08)),url('https://drive.google.com/thumbnail?id=1SVhL2jxQjjTzuGeSJGpnPPmcKdXEeKsf&sz=w1600') center/cover no-repeat;position:relative}
 .method-photo span,.archive-photo span,.circulation-photo span{position:absolute;left:24px;bottom:22px;font-size:9px;letter-spacing:.15em;color:#fff;background:rgba(0,0,0,.52);padding:8px 10px}
-.show-andancas{background-image:linear-gradient(0deg,rgba(0,0,0,.18),rgba(0,0,0,.05)),url('https://drive.google.com/thumbnail?id=16AfIlJhuGpMKduCoCHQZoe4_9-aU-MUf&sz=w1200')}
-.show-despertar{background-image:linear-gradient(135deg,#3a1d10,#111)}
-.show-criacao{background-image:linear-gradient(135deg,rgba(0,0,0,.15),rgba(0,0,0,.04)),url('https://drive.google.com/thumbnail?id=1BuAsSO1MVS5gHfvUmCkKbslazq4TxPuw&sz=w1200')}
+.show-andancas{background-image:url('https://drive.google.com/thumbnail?id=1bEd2v01yGIKqD_k8FNwv_qicRRjRR_FU&sz=w1200')}
+.show-despertar{background-image:url('https://drive.google.com/thumbnail?id=1TpykVaqfxFWizFch5SuCDhpiE-AHxDBn&sz=w1200')}
+.show-brincadeiras{background-image:url('https://drive.google.com/thumbnail?id=1Nfl5YkDOraCzraLG17VGfcXFlZWrxK73&sz=w1200')}
 .archive{grid-template-columns:.8fr 1.2fr}
 .archive-visual{display:grid;grid-template-columns:1fr 1fr;min-height:580px}
 .archive-photo{position:relative;min-height:100%;background-size:cover;background-position:center}
