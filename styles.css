@@ -247,3 +247,7 @@ footer .bpr-credit-group h3{font-size:10px;letter-spacing:.15em;font-weight:500;
 footer .bpr-credit-logos{display:flex;gap:30px;justify-content:center;align-items:center;flex-wrap:wrap}
 footer .bpr-credit-group img{display:block;max-width:170px;width:auto;height:auto;max-height:85px;object-fit:contain;margin:auto}
 @media(max-width:600px){footer .bpr-credit-groups{gap:32px;flex-direction:column;align-items:center}footer .bpr-credit-logos{gap:18px}footer .bpr-credit-group img{max-width:135px;max-height:75px}}
+
+/* Legibility of original logos with dark lettering on dark footer */
+footer .bpr-credit-group img{background:#f5f0e7;border-radius:8px;padding:14px;box-sizing:content-box;max-width:170px;max-height:85px;object-fit:contain}
+@media(max-width:600px){footer .bpr-credit-group img{max-width:135px;max-height:75px;padding:12px}}
