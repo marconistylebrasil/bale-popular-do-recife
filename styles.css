@@ -251,3 +251,14 @@ footer .bpr-credit-group img{display:block;max-width:170px;width:auto;height:aut
 /* Legibility of original logos with dark lettering on dark footer */
 footer .bpr-credit-group img{background:#f5f0e7;border-radius:8px;padding:14px;box-sizing:content-box;max-width:170px;max-height:85px;object-fit:contain}
 @media(max-width:600px){footer .bpr-credit-group img{max-width:135px;max-height:75px;padding:12px}}
+
+/* Footer layout fix: credits occupy their own row, original information stays readable */
+footer{display:grid;grid-template-columns:minmax(220px,1fr) minmax(180px,1fr) minmax(220px,1fr);align-items:center;column-gap:32px;row-gap:28px;justify-content:initial}
+footer .bpr-credits{grid-column:1/-1;grid-row:1;width:100%;min-width:0;flex:none;margin:0;padding:12px 0 34px}
+footer>.brand{grid-column:1;min-width:0;justify-self:start}
+footer>p{min-width:0;margin:0;line-height:1.6;overflow-wrap:normal;white-space:normal}
+footer>p:nth-last-child(2){grid-column:2;justify-self:center;text-align:center}
+footer>p:last-of-type{grid-column:3;justify-self:end;text-align:right}
+footer .bpr-credit-group img{background:#f5f0e7;padding:14px;border-radius:8px;box-sizing:content-box}
+@media(max-width:900px){footer{grid-template-columns:1fr 1fr;align-items:center;gap:24px}footer .bpr-credits{grid-column:1/-1}footer>.brand{grid-column:1}footer>p:nth-last-child(2){grid-column:2;justify-self:end;text-align:right}footer>p:last-of-type{grid-column:1/-1;justify-self:center;text-align:center}}
+@media(max-width:560px){footer{grid-template-columns:1fr;justify-items:center;text-align:center;padding:42px 6vw;gap:18px}footer .bpr-credits,footer>.brand,footer>p:nth-last-child(2),footer>p:last-of-type{grid-column:1;justify-self:center;text-align:center}footer>.brand{justify-content:center}footer .bpr-credits{padding-bottom:28px;margin-bottom:8px}}
